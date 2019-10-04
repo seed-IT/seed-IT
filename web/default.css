@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 html, body { height: 100%; }
-	
+
 body {
 	margin: 0;
 	padding: 0;
@@ -11,17 +11,22 @@ body {
 	font-weight: 300;
 	color: black;
 }
-	
+
 h1, h2, h3 {
 	margin: 0;
 	padding: 0;
 }
 
 .container, .tboxContainer {
-	overflow: hidden;
 	margin: 0 auto;
 	max-width: 1100px;
   min-width: 650px;
+}
+@media screen and (max-width: 650px) {
+	.container, .tboxContainer {
+		max-width: 650px;
+		min-width: 0;
+	}
 }
 
 /* 2-column */
@@ -34,9 +39,14 @@ h1, h2, h3 {
   align-items: flex-start;
 }
 
-.tbox1,.tbox2 {
+.tbox1, .tbox2 {
   margin: 0 1em;
   width: 40%;
+}
+@media screen and (max-width: 650px) {
+	.tbox1, .tbox2 {
+		width: 100%;
+	}
 }
 
 .tbox1 img, .tbox2 img {
@@ -49,23 +59,41 @@ h1, h2, h3 {
 /* Header */
 
 #header {
-	overflow: hidden;
+	background: url("img/background/farm-09-2-1024x104.png") no-repeat;
 	padding: 2em 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
 }
+@media screen and (max-width: 650px) {
+	#header {
+		display: block;
+		height: 200px;
+	}
+}
 
 /* Logo */
 
+@media screen and (max-width: 650px) {
+	#logo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+}
+
 #logo h1 {
-	padding: 0.20em 0.50em;
-	letter-spacing: 0.10em;
+	margin: .2em .5em .2em 1.5em;
+	letter-spacing: .1em;
 	font-size: 2.5em;
 	font-weight: 600;
 }
-	
+@media screen and (max-width: 650px) {
+	#logo h1 { margin: 0; }
+}
+
 #logo a {
 	text-decoration: none;
 	text-transform: uppercase;
@@ -73,18 +101,32 @@ h1, h2, h3 {
 }
 
 #logo img { width: 225px; }
+@media screen and (max-width: 650px) {
+	#logo img { width: 175px; }
+}
 
 /* Menu */
 
-#menu { margin: 2em 0; }
+#menu { margin: 1em 0; }
 
-#menu ul { list-style-type: none; }
-
-#menu li {
-	float: left;
+#menu ul {
+	list-style-type: none;
 	text-align: center;
 }
-	
+@media screen and (max-width: 650px) {
+	#menu ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+#menu li {
+	margin: 1em 0;
+	float: left;
+}
+
 #menu li a, #menu li span {
 	padding: 1em 1.5em;
 	letter-spacing: 0.10em;
@@ -97,16 +139,17 @@ h1, h2, h3 {
 /* Banner */
 
 #page {
-	overflow: hidden;
 	padding: 5em 0;
 	background: white;
 }
 
 #article {
-        margin-bottom: 4em;
-        padding-bottom: 4em;
-        border-bottom: 1px solid rgba(0,0,0,0.08);
-        text-align: center;
+	background: url("img/background/farm-27-1024x290.png") no-repeat 25% 0;
+	background-size: 200px;
+	margin-bottom: 4em;
+	padding-bottom: 4em;
+	border-bottom: 1px solid rgba(0,0,0,0.08);
+	text-align: center;
 }
 
 #article h2 {
@@ -129,20 +172,25 @@ h1, h2, h3 {
 /* Copyright  */
 
 #copyright {
-	overflow: hidden;
 	padding: 2em 0;
 	border-top: 1px solid rgba(0,0,0,0.08);
 }
-	
+
 #copyright p {
 	letter-spacing: .2em;
 	text-align: center;
 	text-transform: uppercase;
 	text-shadow: 2px 2px 4px #616161;
-	font-size: .9em;
+	font-size: .8em;
 	color: rgba(0,0,0,0.8);
 }
-	
+@media screen and (max-width: 650px) {
+	#copyright p {
+		letter-spacing: .1em;
+		font-size: .5em;
+	}
+}
+
 #copyright a {
 	text-decoration: none;
 	color: rgba(0,0,0,1);
