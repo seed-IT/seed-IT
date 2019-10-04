@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 html, body { height: 100%; }
 	
 body {
 	margin: 0;
 	padding: 0;
-	background: #e0e0e0;
-	font-family: 'Source Sans Pro', sans-serif;
+	background: #e6ee9c;
+	font-family: 'Roboto', 'Source Sans Pro', sans-serif;
 	font-size: 12pt;
 	font-weight: 300;
 	color: black;
@@ -58,7 +60,6 @@ h1, h2, h3 {
 /* Logo */
 
 #logo h1 {
-	background: #eeab41;
 	padding: 0.20em 0.50em;
 	letter-spacing: 0.10em;
 	font-size: 2.5em;
@@ -102,41 +103,43 @@ h1, h2, h3 {
 }
 
 #article {
-  margin-bottom: 5em;
+  margin-bottom: 4em;
 	padding-bottom: 4em;
 	border-bottom: 1px solid rgba(0,0,0,0.08);
 	text-align: center;
 }
 
 #article h2 {
-	padding-bottom: 0.50em;
-
+	padding-bottom: .5em;
 	font-size: 2.6em;
 	font-weight: 300;
+	text-shadow: 2px 2px 4px #757575;
 }
 
 /* Featured */
 
 #articleBox h2 {
-	padding-bottom: 1em;
+	padding-bottom: .5em;
 	text-transform: uppercase;
 	font-size: 1.8em;
 	font-weight: 300;
+	text-shadow: 2px 2px 4px #bdbdbd;
 }
 
 /* Copyright  */
 
 #copyright {
 	overflow: hidden;
-	padding: 5em 0;
+	padding: 2em 0;
 	border-top: 1px solid rgba(0,0,0,0.08);
 }
 	
 #copyright p {
-	letter-spacing: 0.20em;
+	letter-spacing: .2em;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 0.90em;
+	text-shadow: 2px 2px 4px #616161;
+	font-size: .9em;
 	color: rgba(0,0,0,0.8);
 }
 	
