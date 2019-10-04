@@ -103,10 +103,10 @@ h1, h2, h3 {
 }
 
 #article {
-  margin-bottom: 4em;
-	padding-bottom: 4em;
-	border-bottom: 1px solid rgba(0,0,0,0.08);
-	text-align: center;
+        margin-bottom: 4em;
+        padding-bottom: 4em;
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+        text-align: center;
 }
 
 #article h2 {

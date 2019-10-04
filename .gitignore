@@ -1,0 +1,8 @@
+# Git ignore of seed-IT project
+# See repository at https://github.com/melvinmajor/seed-IT
+# ========================================================
+
+# Documents and useless files/folders
+thumbs.db
+\.DS_Store
+.idea/
