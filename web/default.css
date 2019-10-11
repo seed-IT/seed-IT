@@ -22,9 +22,9 @@ h1, h2, h3 {
 	max-width: 1100px;
   min-width: 650px;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 992px) {
 	.container, .tboxContainer {
-		max-width: 650px;
+		max-width: 900px;
 		min-width: 0;
 	}
 }
@@ -43,7 +43,7 @@ h1, h2, h3 {
   margin: 0 1em;
   width: 40%;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 992px) {
 	.tbox1, .tbox2 {
 		width: 100%;
 	}
@@ -66,22 +66,20 @@ h1, h2, h3 {
   justify-content: space-between;
   align-items: flex-start;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 992px) {
 	#header {
-		display: block;
-		height: 200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-height: 350px;
+		min-height: 200px;
 	}
 }
 
 /* Logo */
 
-@media screen and (max-width: 650px) {
-	#logo {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 50%;
-	}
+@media screen and (max-width: 992px) {
+	#logo {	align-self: center;	}
 }
 
 #logo h1 {
@@ -90,7 +88,7 @@ h1, h2, h3 {
 	font-size: 2.5em;
 	font-weight: 600;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 992px) {
 	#logo h1 { margin: 0; }
 }
 
@@ -100,9 +98,13 @@ h1, h2, h3 {
 	color: white;
 }
 
-#logo img { width: 225px; }
-@media screen and (max-width: 650px) {
-	#logo img { width: 175px; }
+#logo img {
+	width: 225px;
+	-webkit-filter: drop-shadow(2px 2px 4px white) drop-shadow(-2px -2px 4px white);
+	filter: drop-shadow(2px 2px 4px white) drop-shadow(-2px -2px 4px white);
+}
+@media screen and (max-width: 992px) {
+	#logo img {	width: 300px;	}
 }
 
 /* Menu */
@@ -113,7 +115,7 @@ h1, h2, h3 {
 	list-style-type: none;
 	text-align: center;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 992px) {
 	#menu ul {
 		display: flex;
 		flex-direction: row;
@@ -134,6 +136,9 @@ h1, h2, h3 {
 	text-transform: uppercase;
 	font-size: 0.90em;
 	color: #204c48;
+}
+@media screen and (max-width: 992px) {
+	#menu li a, #menu li span { font-size: 1.6em;	}
 }
 
 /* Banner */
@@ -181,13 +186,14 @@ h1, h2, h3 {
 	text-align: center;
 	text-transform: uppercase;
 	text-shadow: 2px 2px 4px #616161;
-	font-size: .8em;
+	font-size: 12px;
 	color: rgba(0,0,0,0.8);
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 992px) {
 	#copyright p {
 		letter-spacing: .1em;
 		font-size: .5em;
+		text-shadow: none;
 	}
 }
 
