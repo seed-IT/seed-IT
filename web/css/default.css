@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html, body { height: 100%; }
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #e6ee9c;
+	font-family: 'Roboto', 'Source Sans Pro', sans-serif;
+	font-size: 12pt;
+	font-weight: 300;
+	color: black;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.container, .tboxContainer {
+	margin: 0 auto;
+	max-width: 1100px;
+  min-width: 650px;
+}
+@media screen and (max-width: 992px) {
+	.container, .tboxContainer {
+		max-width: 900px;
+		min-width: 0;
+	}
+}
+
+/* 2-column */
+
+.tboxContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tbox1, .tbox2 {
+  margin: 0 1em;
+  width: 40%;
+}
+@media screen and (max-width: 992px) {
+	.tbox1, .tbox2 {
+		width: 100%;
+	}
+}
+
+.tbox1 img, .tbox2 img {
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+
+#header {
+	background: url("../img/background/farm-09-2-1024x104.png") no-repeat;
+	padding: 2em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media screen and (max-width: 992px) {
+	#header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-height: 350px;
+		min-height: 200px;
+	}
+}
+
+/* Logo */
+
+@media screen and (max-width: 992px) {
+	#logo {	align-self: center;	}
+}
+
+#logo h1 {
+	margin: .2em .5em .2em 1.5em;
+	letter-spacing: .1em;
+	font-size: 2.5em;
+	font-weight: 600;
+}
+@media screen and (max-width: 992px) {
+	#logo h1 { margin: 0; }
+}
+
+#logo a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+}
+
+#logo img {
+	width: 225px;
+	-webkit-filter: drop-shadow(2px 2px 4px white) drop-shadow(-2px -2px 4px white);
+	filter: drop-shadow(2px 2px 4px white) drop-shadow(-2px -2px 4px white);
+}
+@media screen and (max-width: 992px) {
+	#logo img {	width: 300px;	}
+}
+
+/* Menu */
+
+#menu { margin: 1em 0; }
+
+#menu ul {
+	list-style-type: none;
+	text-align: center;
+}
+@media screen and (max-width: 992px) {
+	#menu ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+#menu li {
+	margin: 1em 0;
+	float: left;
+}
+
+#menu li a, #menu li span {
+	padding: 1em 1.5em;
+	letter-spacing: 0.10em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.90em;
+	color: #204c48;
+}
+@media screen and (max-width: 992px) {
+	#menu li a, #menu li span { font-size: 1.6em;	}
+}
+
+/* Banner */
+
+#page {
+	padding: 5em 0;
+	background: white;
+}
+
+#article {
+	background: url("../img/background/farm-27-1024x290.png") no-repeat 25% 0;
+	background-size: 200px;
+	margin-bottom: 4em;
+	padding-bottom: 4em;
+	border-bottom: 1px solid rgba(0,0,0,0.08);
+	text-align: center;
+}
+
+#article h2 {
+	padding-bottom: .5em;
+	font-size: 2.6em;
+	font-weight: 300;
+	text-shadow: 2px 2px 4px #757575;
+}
+
+/* Featured */
+
+#articleBox h2 {
+	padding-bottom: .5em;
+	text-transform: uppercase;
+	font-size: 1.8em;
+	font-weight: 300;
+	text-shadow: 2px 2px 4px #bdbdbd;
+}
+
+/* Copyright  */
+
+#copyright {
+	padding: 2em 0;
+	border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+#copyright p {
+	letter-spacing: .2em;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 4px #616161;
+	font-size: 12px;
+	color: rgba(0,0,0,0.8);
+}
+@media screen and (max-width: 992px) {
+	#copyright p {
+		letter-spacing: .1em;
+		font-size: .5em;
+		text-shadow: none;
+	}
+}
+
+#copyright a {
+	text-decoration: none;
+	color: rgba(0,0,0,1);
+}
