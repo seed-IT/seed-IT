@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>S'inscire | Seed-it</title>
+		<title>S'inscrire | Seed-it</title>
 		<link href="css/signUp.css" rel="stylesheet" type="text/css" media="all" />
 
 	</head>
