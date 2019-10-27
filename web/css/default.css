@@ -5,7 +5,7 @@ html, body { height: 100%; }
 body {
 	margin: 0;
 	padding: 0;
-	background: #e6ee9c;
+	/*background: #e6ee9c;*/
 	font-family: 'Roboto', 'Source Sans Pro', sans-serif;
 	font-size: 12pt;
 	font-weight: 300;
@@ -17,14 +17,18 @@ h1, h2, h3 {
 	padding: 0;
 }
 
+
+p, h2 {
+	text-align: center;
+}
 .container, .tboxContainer {
 	margin: 0 auto;
 	max-width: 1100px;
   min-width: 650px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 650px) {
 	.container, .tboxContainer {
-		max-width: 900px;
+		max-width: 650px;
 		min-width: 0;
 	}
 }
@@ -37,13 +41,14 @@ h1, h2, h3 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+	background-color: #f6f6f6;
 }
 
 .tbox1, .tbox2 {
   margin: 0 1em;
   width: 40%;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 650px) {
 	.tbox1, .tbox2 {
 		width: 100%;
 	}
@@ -59,27 +64,29 @@ h1, h2, h3 {
 /* Header */
 
 #header {
-	background: url("../img/background/farm-09-2-1024x104.png") no-repeat;
+	background: url("images/farm-09-2-1024x104.png") no-repeat;
 	padding: 2em 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+	background: #e6ee9c;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 650px) {
 	#header {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		max-height: 350px;
-		min-height: 200px;
+		display: block;
+		height: 200px;
 	}
 }
-
 /* Logo */
 
-@media screen and (max-width: 992px) {
-	#logo {	align-self: center;	}
+@media screen and (max-width: 650px) {
+	#logo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
 }
 
 #logo h1 {
@@ -88,7 +95,7 @@ h1, h2, h3 {
 	font-size: 2.5em;
 	font-weight: 600;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 650px) {
 	#logo h1 { margin: 0; }
 }
 
@@ -98,13 +105,9 @@ h1, h2, h3 {
 	color: white;
 }
 
-#logo img {
-	width: 225px;
-	-webkit-filter: drop-shadow(2px 2px 4px white) drop-shadow(-2px -2px 4px white);
-	filter: drop-shadow(2px 2px 4px white) drop-shadow(-2px -2px 4px white);
-}
-@media screen and (max-width: 992px) {
-	#logo img {	width: 300px;	}
+#logo img { width: 225px; }
+@media screen and (max-width: 650px) {
+	#logo img { width: 175px; }
 }
 
 /* Menu */
@@ -115,7 +118,15 @@ h1, h2, h3 {
 	list-style-type: none;
 	text-align: center;
 }
-@media screen and (max-width: 992px) {
+
+#header #menu ul{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+@media screen and (max-width: 650px) {
 	#menu ul {
 		display: flex;
 		flex-direction: row;
@@ -124,21 +135,15 @@ h1, h2, h3 {
 	}
 }
 
-#menu li {
+#header #menu li {
 	margin: 1em 0;
 	float: left;
-}
-
-#menu li a, #menu li span {
-	padding: 1em 1.5em;
+  padding: 1em 1.5em;
 	letter-spacing: 0.10em;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 0.90em;
 	color: #204c48;
-}
-@media screen and (max-width: 992px) {
-	#menu li a, #menu li span { font-size: 1.6em;	}
 }
 
 /* Banner */
@@ -149,14 +154,13 @@ h1, h2, h3 {
 }
 
 #article {
-	background: url("../img/background/farm-27-1024x290.png") no-repeat 25% 0;
+	background: url("images/farm-27-1024x290.png") no-repeat 25% 0;
 	background-size: 200px;
 	margin-bottom: 4em;
 	padding-bottom: 4em;
 	border-bottom: 1px solid rgba(0,0,0,0.08);
 	text-align: center;
 }
-
 #article h2 {
 	padding-bottom: .5em;
 	font-size: 2.6em;
@@ -179,6 +183,7 @@ h1, h2, h3 {
 #copyright {
 	padding: 2em 0;
 	border-top: 1px solid rgba(0,0,0,0.08);
+	background: #e6ee9c;
 }
 
 #copyright p {
@@ -186,14 +191,13 @@ h1, h2, h3 {
 	text-align: center;
 	text-transform: uppercase;
 	text-shadow: 2px 2px 4px #616161;
-	font-size: 12px;
+	font-size: .8em;
 	color: rgba(0,0,0,0.8);
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 650px) {
 	#copyright p {
 		letter-spacing: .1em;
 		font-size: .5em;
-		text-shadow: none;
 	}
 }
 
