@@ -1,4 +1,4 @@
-@extends('template')
+@extends('layouts/templateContact')
 
 @section('contenu')
     <br>
