@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-html, body { height: 100%; }
+html, body {
+	height: 100%;
+}
 
 body {
 	margin: 0;
 	padding: 0;
-	/*background: #e6ee9c;*/
+	background: #e6ee9c;
 	font-family: 'Roboto', 'Source Sans Pro', sans-serif;
 	font-size: 12pt;
 	font-weight: 300;
@@ -16,10 +18,9 @@ h1, h2, h3 {
 	margin: 0;
 	padding: 0;
 }
-
-
 p, h2 {
 	text-align: center;
+	font-family: 'Roboto', 'Source Sans Pro', sans-serif;
 }
 .container, .tboxContainer {
 	margin: 0 auto;
@@ -41,7 +42,7 @@ p, h2 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-	background-color: #f6f6f6;
+  background-color: white;
 }
 
 .tbox1, .tbox2 {
@@ -64,13 +65,13 @@ p, h2 {
 /* Header */
 
 #header {
-	background: url("images/farm-09-2-1024x104.png") no-repeat;
+	background: url("farm-09-2-1024x104.png") no-repeat;
 	padding: 2em 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-	background: #e6ee9c;
+	border-bottom: 2px solid rgba(0,0,0,0.4);
 }
 @media screen and (max-width: 650px) {
 	#header {
@@ -78,6 +79,17 @@ p, h2 {
 		height: 200px;
 	}
 }
+
+.nav a{
+	border: solid 5px green;
+	border-radius: 50%;
+
+}
+
+.nav li :hover{
+	background-color:#badc58;
+}
+
 /* Logo */
 
 @media screen and (max-width: 650px) {
@@ -117,15 +129,8 @@ p, h2 {
 #menu ul {
 	list-style-type: none;
 	text-align: center;
-}
 
-#header #menu ul{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
 }
-
 @media screen and (max-width: 650px) {
 	#menu ul {
 		display: flex;
@@ -135,10 +140,18 @@ p, h2 {
 	}
 }
 
-#header #menu li {
+.nav li {
 	margin: 1em 0;
 	float: left;
-  padding: 1em 1.5em;
+}
+/*
+#menu li {
+	margin: 1em 0;
+	float: left;
+}*/
+
+#menu li a, #menu li span {
+	padding: 1em 1.5em;
 	letter-spacing: 0.10em;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -146,24 +159,102 @@ p, h2 {
 	color: #204c48;
 }
 
+/* main content */
+.main {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #ffffff;
+  margin-left: 20%;
+	margin-right: 20%;
+  width: 60%;
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+/* mise en page ruban */
+
+#fond {
+position: relative;
+margin: 0px auto;
+width: 350px;
+background: #fff;
+border-radius: 5px;
+box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+z-index: 10;
+height:110px;
+}
+
+.ruban {
+background: #b1c70d;
+height: 50px;
+width: 380px;
+position: relative;
+left:-15px;
+top: 30px;
+float: left;
+box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+z-index: 100;
+}
+
+.ruban h2 {
+font-size: 0px;
+color: #204c48;
+text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+text-align: center;
+margin:10px 0px 10px 0px;
+}
+
+.ruban_gauche {
+border-color: transparent #7e9202 transparent transparent;
+border-style:solid;
+border-width:15px;
+height:0px;
+width:0px;
+position: relative;
+left: -30px;
+top: 65px;
+z-index: -1;  /*s'affichera sous le rectangle  */
+}
+
+.ruban_droit {
+border-color: transparent transparent transparent #7e9202;
+border-style:solid;
+border-width:15px;
+height:0px;
+width:0px;
+position: relative;
+left: 350px;
+top: 35px;
+z-index: -1;
+}
+
+/* mise en page ruban */
+
+.tboxContainer{
+	padding-bottom: 2em;
+}
+/* main content */
+
 /* Banner */
 
 #page {
 	padding: 5em 0;
-	background: white;
+	background: #e6ee9c;
 }
 
 #article {
-	background: url("images/farm-27-1024x290.png") no-repeat 25% 0;
+	background: url("farm-27-1024x290.png") no-repeat 25% 0;
 	background-size: 200px;
-	margin-bottom: 4em;
+	margin-bottom: 2em;
 	padding-bottom: 4em;
 	border-bottom: 1px solid rgba(0,0,0,0.08);
 	text-align: center;
+	padding-top: 25px;
 }
+
 #article h2 {
 	padding-bottom: .5em;
-	font-size: 2.6em;
+	font-size: 2em;
 	font-weight: 300;
 	text-shadow: 2px 2px 4px #757575;
 }
@@ -182,8 +273,8 @@ p, h2 {
 
 #copyright {
 	padding: 2em 0;
-	border-top: 1px solid rgba(0,0,0,0.08);
-	background: #e6ee9c;
+	border-top: 2px solid rgba(0,0,0,0.4);
+	-webkit-gradient(linear, center left, center right, from(rgba(0,0,0,0.08)) to(rgba(0,0,0,0)));
 }
 
 #copyright p {
