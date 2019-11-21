@@ -1,0 +1,23 @@
+.page-item a{
+	border: solid 5px green;
+	border-radius: 50%;
+
+}
+
+.page-item li :hover{
+	background-color:#badc58;
+}
+
+@media screen and (max-width: 650px) {
+	 ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+	ul {
+	list-style-type: none;
+	text-align: center;
+
+}
