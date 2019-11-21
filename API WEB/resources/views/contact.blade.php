@@ -1,10 +1,16 @@
-@extends('layouts/templateContact')
+@extends('layouts/templateAll')
 
 @section('contenu')
+<link href="{{ asset('css/contact.css') }}" rel="stylesheet">
+@endsection
+
+@section('content')
     <br>
 	<div class="col-sm-offset-3 col-sm-6">
 		<div class="panel panel-info">
-			<div class="panel-heading">Contactez-nous</div>
+			<div class="panel-heading"> <h2> Contactez-nous </h2>
+										 <h2> <a> Accueil </a></h2>
+			</div>
 			<div class="panel-body"> 
 				{!! Form::open(['url' => 'contact']) !!}
 					<div class="form-group {!! $errors->has('nom') ? 'has-error' : '' !!}">

@@ -1,31 +1,6 @@
-<!doctype html>
+@extends('layouts.templateAll')
 
-<html lang="fr">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Seed-it</title>
-		 <link href="{{ asset('css/seed-it.css') }}" rel="stylesheet" type="text/css" media="all">
-	
-	</head>
-
-	<body>
-		<div id="header" class="container">
-			<div id="logo">
-				<h1><a href="#"><img src="{{ asset('images/seed-it-logo.png') }}"></a></h1>
-			</div>
-
-			<div id="menu">
-				<ul>
-					<li><a href="{{url('accueil')}}">Acceuil</a></li>
-					<li><a href="{{url('seedit')}}">Seed-IT</a></li>
-					<li><a href="{{url('posts')}}">Boutique</a></li>
-					<li><a href="{{url('login')}}">Connexion</a></li>
-					<li><a href="{{url('contact')}}">Contact</a></li>
-					
-				</ul>
-			</div>
-		</div>
-		
+@section('content')
 		<div id="page">
   	<div id="articleBox" class="tboxContainer">
 			<div class="tbox1">
@@ -40,8 +15,8 @@
 		                <p>Web developper</p>
 		              </li>
 									<li>
-										<p>API Web</p>
-									</li>
+						<p>API Web</p>
+					</li>
 		            </ul>
 		          </div>
 			</div>
@@ -51,10 +26,10 @@
 		      <div id="menu">
 		        <ul>
 		          <li>
-		            <p>Database architect</p>
+		          Database architect
 		          </li>
 		          <li>
-		            <p>Web developper</p>
+		            Web developper
 		          </li>
 		        </ul>
 		      </div>
@@ -137,9 +112,4 @@
       </div>
     </div>
 	</div>
-		<div id="copyright" class="container">
-			<p>2019-2020 &copy; All rights reserved | Projet d'intégration |
-				<a href="index.html">seed-IT.eu</a></p>
-		</div>
-	</body>
-</html>
+	@endsection

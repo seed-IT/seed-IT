@@ -1,31 +1,8 @@
-<!DOCTYPE html>
+@extends('layouts.templateAll')
 
-<html lang="fr">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Bienvenue | Seed-it</title>
-		<link href="{{ asset('css/default.css') }}" rel="stylesheet">
+@section('content')
 
-	</head>
-	<body>
-		<div id="header" class="container">
-			<div id="logo">
-				<h1><a href="#"><img src="{{ asset('images/seed-it-logo.png') }}" /></a></h1>
-			</div>
-
-			<div id="menu">
-				<ul>
-					<li><a href="{{url('accueil')}}">Acceuil</a></li>
-					<li><a href="{{url('seedit')}}">Seed-IT</a></li>
-					<li><a href="{{url('posts')}}">Boutique</a></li>
-					<li><a href="{{url('login')}}">Connexion</a></li>
-					<li><a href="{{url('contact')}}">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-
-		<div id="page">
-			<div id="article" class="container">
+<div id="article" class="container">
 				<h2>Bienvenue</h2>
 				<p>Le principe même de notre système est de créer une famille de « micro-agriculteurs » et de partager l’envie de cultiver. De nos jours le plus difficile pour commencer une activité est trouver les bonnes inspirations, les bons fournisseurs mais surtout les bons conseils. Ici nous encourageons le partage, et pour le prix d’un petit sachet de graines vous aurez accès illimité à notre réseau de graines non OGM.</p>
 			</div>
@@ -44,10 +21,4 @@
 				</div>
 			</div>
 		</div>
-
-		<div id="copyright" class="container">
-			<p>2019-2020 &copy; All rights reserved | Projet d'intégration |
-				<a href="index.html">seed-IT.eu</a></p>
-		</div>
-	</body>
-</html>
+@endsection
