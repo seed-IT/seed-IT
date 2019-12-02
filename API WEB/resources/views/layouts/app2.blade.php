@@ -6,7 +6,7 @@
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('Login | Seed-it') }}</title>
 
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -15,21 +15,21 @@
 <body>
 
         <div class="container">
-                        
-         <div id="formulaire">   
-		 @guest
-                           
-                             <h2>   <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>  </h2> 
-                           
+
+         <div id="formulaire">
+                 @guest
+
+                             <h2>   <a class="nav-link" href="{{ url('accueil') }}">{{ __('Accueil') }}</a>  </h2>
+
                             @if (Route::has('register'))
-                                
+
                                <h2>       <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a> </h2>
-                                
+
                             @endif
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+									{{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -46,12 +46,12 @@
                             </li>
                         @endguest
                     </ul>
-                
-
-
-            @yield('content')
-       
-    </div>
+                <script src="{{ asset('js/storm.js') }}" defer></script>
+				
+                                                                                                                                                                                               
+			@yield('content')
+    
 	</div>
+        </div>
 </body>
 </html>
