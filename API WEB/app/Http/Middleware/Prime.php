@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\RedirectResponse;
 
-class Admin
+class Prime
 {
 
         /**
@@ -17,11 +17,11 @@ class Admin
          */
         public function handle($request, Closure $next)
         {
-                if ($request->user()->admin)
+                if ($request->user()->prime)
                 {
                         return $next($request);
                 }
-                return new RedirectResponse(url('/'));
+
         }
 
 }
