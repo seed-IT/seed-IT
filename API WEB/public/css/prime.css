@@ -1,0 +1,42 @@
+#table{
+        margin-left: 20%;
+        margin-right: 15%;
+
+}
+th, td{
+                text-align: center;
+                margin: 50px;
+                font-size: 1.5em;
+}
+table td ul{
+                list-style-type: none;
+                padding: 0px;
+}
+table td ul li{
+        margin-top: 20px;
+}
+input[type=button]  {
+  background-color: #e6ee9c;
+  border: none;
+  color: black;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+        font-size: 1em;
+  border-radius: 5px 5px 5px 5px;
+  margin:  20px;
+}
+/*.description{
+        background-color: #3498db;
+        border-radius: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
+}*/
+tr:hover{
+        background-color: #e6ee9c;
+}
+ .prix{
+         width: 150px;
+ }

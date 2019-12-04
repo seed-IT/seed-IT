@@ -1,4 +1,5 @@
-a {
+µµa {
+µ
   color: #92badd;
   display:inline-block;
   text-decoration: none;
@@ -11,11 +12,10 @@ h2 {
   font-weight: 600;
   text-transform: uppercase;
   display:inline-block;
-  margin: 40px 8px 10px 8px; 
+  margin: 40px 8px 10px 8px;
   color: #000000;
   font-style: bold;
 }
-
 
 
 input[type=submit]  {
@@ -33,6 +33,23 @@ input[type=submit]  {
 
 }
 
+
+ select {
+      background-color: #F1EBEB;
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 47.5%;
+  border: 2px solid #f6f6f6;
+}
+
+
+
 textarea {
   background-color: #F1EBEB;
   border: none;
@@ -49,7 +66,7 @@ textarea {
 }
 input[type=email] {
   background-color: #F1EBEB;
- 
+
   color: #000000;
   padding: 15px 32px;
   text-align: center;
