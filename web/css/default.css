@@ -305,6 +305,39 @@ z-index: -1;
 	font-weight: 300;
 	text-shadow: 2px 2px 4px #757575;
 }
+/* RGPD */
+#RGPD{
+  text-align: left;
+  max-width: 80%;
+  margin-top: 15px;
+  margin-left: 10%;
+  margin-left: 10%;
+  margin-bottom: 25px;
+  display: block;
+}
+#RGPD h3, #RGPD a{
+  margin: 25px 0px 25px 0px ;
+  text-align: center;
+}
+#RGPD h3{
+  text-decoration: underline;
+}
+#RGPD p{
+  margin-bottom: 10px;
+  text-align: left;
+}
+#contact{
+  list-style-type: none;
+}
+#contact li{
+  margin-bottom: 7px;
+}
+
+#website{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
 /* Featured */
 
