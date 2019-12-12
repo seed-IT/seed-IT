@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link href="boutique.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<title>Bienvenue | Seed-it</title>
+		<link href="http://seed-it.eu/css/default.css" rel="stylesheet">
+		<!--<link href="http://seed-it.eu/css/boutique.css" rel="stylesheet">-->
+				<!-- <link href="http://seed-it.eu/css/app.css" rel="stylesheet"> -->
+		<script src="http://seed-it.eu/js/app.js" defer=""></script>
+
+		<meta name="csrf-token" content="hGU2hHylIk5Ms8XutI8bnio2yApvT8yq8JHwDTBX">
+	</head>
+	<body>
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="#"><img src="http://seed-it.eu/images/seed-it-logo.png"></a></h1>
+			</div>
+
+			<div id="menu" class="nav">
+				<ul>
+					<li><a href="http://seed-it.eu/accueil">Accueil</a></li>
+					<li><a href="http://seed-it.eu/seedit">Seed-IT</a></li>
+					<li><a href="http://seed-it.eu/post">Boutique</a></li>
+					<li><a href="http://seed-it.eu/prime">Prime</a></li>
+										
+					<li><a href="http://seed-it.eu/contact">Contact</a></li>
+					
+					 							<li> <a href="http://seed-it.eu/home"> Mon profil </a> </li>
+							    <li class="nav-item dropdown">
+								
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre="">
+                                     <font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">
+									Fil </font> <span class="caret"></span>
+										</font>
+										
+									<pseudo:after><!--<pseudo:after-->
+                                </pseudo:after></a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre="">
+								
+                                    <a class="dropdown-item" href="http://seed-it.eu/logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+										<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">
+									   Logout
+									   </font>
+									   </font>
+                                    </a>
+									 <form id="logout-form" action="http://seed-it.eu/logout" method="POST" style="display: none;">
+                                        <input type="hidden" name="_token" value="hGU2hHylIk5Ms8XutI8bnio2yApvT8yq8JHwDTBX">                                    </form>
+									
+                           		</div></li></ul>
+			</div>
+		</div><!-- fin div header-->
+							<!--DEBUT--------------------------->
+		<div id="page">
+			<div class="container white shadow p-3 mb-5 rounded-lg">
+							<!-- FILTRE------------>
+				<div class="filtre">Filtres</div>
+				<div class="btn-group btn-group-toggle" data-toggle="buttons">
+
+              <label class="btn btn-secondary btn-sm">
+                <input type="radio" name="options" id="option1"> Fruits
+              </label>
+              <label class="btn btn-secondary btn-sm">
+                <input type="radio" name="options" id="option2"> Légumes
+              </label>
+              <label class="btn btn-secondary btn-sm">
+                <input type="radio" name="options" id="option3"> Plantes
+              </label>
+                <label class="btn btn-secondary btn-sm">
+                    <input type="radio" name="options" id="option3" checked> Fleurs
+                </label>
+                <label class="btn btn-secondary btn-sm">
+                    <input type="radio" name="options" id="option4"> Annuler les filtres
+                </label>
+            </div><!-- FIN FILTRE------><!--LES CONSEILS DOIVENT ETRE PRESENTS DANS LA PAGE LORSQU'ON CLIQUE SUR L'IMAGE-->
+				<div class="row">
+					<div class="col-3">
+				        <a class="image" href="ADRESSE A METTRE"><img src="" alt="Flower"></a>
+				    </div>
+					<div class="col-9">
+						<h5>Graine du sud</h5> 
+						<a href="ADRESSE A METTRE"><button type="button" class="btn btn-success btn-sm py-0">Contact</button></a>
+				        <p class="description"><u><strong><em>Description :</em></strong></u>
+				        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					    </div>
+				</div>
+			    <div class="row">	
+					<div class="col-3">
+				        <a class="image" href="ADRESSE A METTRE"><img src="" alt="Flower"></a>
+				    </div>
+					<div class="col-9">
+						<h5>Graine du sud</h5> 
+						<a href="ADRESSE A METTRE"><button type="button" class="btn btn-success btn-sm py-0">Contact</button></a>
+				        <p class="description"><u><strong><em>Description :</em></strong></u>
+				        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					    </div>
+				</div>
+				<div class="row">
+					<div class="col-3">
+				        <a class="image" href="ADRESSE A METTRE"><img src="" alt="Flower"></a>
+				    </div>
+					<div class="col-9">
+						<h5>Graine du sud</h5> 
+						<a href="ADRESSE A METTRE"><button type="button" class="btn btn-success btn-sm py-0">Contact</button></a>
+				        <p class="description"><u><strong><em>Description :</em></strong></u>
+				        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					    </div>
+				</div>
+				<div class="row">
+					<div class="col-3">
+				        <a class="image" href="ADRESSE A METTRE"><img src="" alt="Flower"></a>
+				    </div>
+					<div class="col-9">
+						<h5>Graine du sud</h5> 
+						<a href="ADRESSE A METTRE"><button type="button" class="btn btn-success btn-sm py-0">Contact</button></a>
+				        <p class="description"><u><strong><em>Description :</em></strong></u>
+				        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					    </div>
+				</div>
+				<div class="row">
+					<div class="col-3">
+				        <a class="image" href="ADRESSE A METTRE"><img src="" alt="Flower"></a>
+				    </div>
+					<div class="col-9">
+						<h5>Graine du sud</h5> 
+						<a href="ADRESSE A METTRE"><button type="button" class="btn btn-success btn-sm py-0">Contact</button></a>
+				        <p class="description"><u><strong><em>Description :</em></strong></u>
+				        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					    </div>
+				</div>
+				<div class="row">
+					<div class="col-3">
+				        <a class="image" href="ADRESSE A METTRE"><img src="" alt="Flower"></a>
+				    </div>
+					<div class="col-9">
+						<h5>Graine du sud</h5> 
+						<a href="ADRESSE A METTRE"><button type="button" class="btn btn-success btn-sm py-0">Contact</button></a>
+				        <p class="description"><u><strong><em>Description :</em></strong></u>
+				        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					    </div>
+				</div>
+				<div class="row">
+					<div class="col-3">
+				        <a class="image" href="ADRESSE A METTRE"><img src="lilium-fleur-600x450.jpg" alt="Flower"></a>
+				    </div>
+					<div class="col-9">
+						<h5>Graine du sud</h5> 
+						<a href="ADRESSE A METTRE"><button type="button" class="btn btn-success btn-sm py-0">Contact</button></a>
+				        <p class="description"><u><strong><em>Description :</em></strong></u>
+				        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					    </div>
+				</div>
+				<div class="row">
+					<div class="col-3">
+				        <a class="image" href="ADRESSE A METTRE"><img src="" alt="Flower"></a>
+				    </div>
+					<div class="col-9">
+						<h5>Graine du sud</h5> 
+						<a href="ADRESSE A METTRE"><button type="button" class="btn btn-success btn-sm py-0">Contact</button></a>
+				        <p class="description"><u><strong><em>Description :</em></strong></u>
+				        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					    </div>
+				</div>
+				<div class="row">
+					<div class="col-3">
+				        <a class="image" href="ADRESSE A METTRE"><img src="" alt="Flower"></a>
+				    </div>
+					<div class="col-9">
+						<h5>Graine du sud</h5> 
+						<a href="ADRESSE A METTRE"><button type="button" class="btn btn-success btn-sm py-0">Contact</button></a>
+				        <p class="description"><u><strong><em>Description :</em></strong></u>
+				        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					    </div>
+				</div>
+				<div class="row">
+					<div class="col-3">
+				        <a class="image" href="ADRESSE A METTRE"><img src="" alt="Flower"></a>
+				    </div>
+					<div class="col-9">
+						<h5>Graine du sud</h5> 
+						<a href="ADRESSE A METTRE"><button type="button" class="btn btn-success btn-sm py-0">Contact</button></a>
+				        <p class="description"><u><strong><em>Description :</em></strong></u>
+				        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					    </div>
+				</div>
+				<nav aria-label="Page navigation example"><!--PAGINATION------------------------>
+			 	<ul class="pagination">
+				    <li class="page-item"><a class="page-link" href="#">Previous</a></li><!--A MODIFIER POUR SE DEPLACER D'UNE PAGE A UNE AUTRE------------------------>
+				    <li class="page-item"><a class="page-link" href="#">1</a></li><!--A MODIFIER POUR SE DEPLACER D'UNE PAGE A UNE AUTRE------------------------>
+				    <li class="page-item"><a class="page-link" href="#">2</a></li><!--A MODIFIER POUR SE DEPLACER D'UNE PAGE A UNE AUTRE------------------------>
+				    <li class="page-item"><a class="page-link" href="#">3</a></li><!--A MODIFIER POUR SE DEPLACER D'UNE PAGE A UNE AUTRE------------------------>
+				    <li class="page-item"><a class="page-link" href="#">Next</a></li><!--A MODIFIER POUR SE DEPLACER D'UNE PAGE A UNE AUTRE------------------------>
+			  	</ul>
+			</nav><!--FIN - PAGINATION------------------------>
+			</div>
+		</div>
+														<!--FIN----------------------------->
+
+		<div id="copyright" class="container">
+			<p>2019-2020 © All rights reserved | Projet d'intégration |
+				<a href="index.html">seed-IT.eu</a></p>
+		</div>
+	</body>
