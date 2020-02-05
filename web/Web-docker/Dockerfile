@@ -4,9 +4,9 @@ RUN apt update && apt upgrade -y && DEBIAN_FRONTEND=noninteractive apt install -
 RUN a2enmod ssl
 RUN a2enmod rewrite
 
-COPY WEB/seed-it.eu.conf /etc/apache2/sites-available
+COPY WEB/audd.conf /etc/apache2/sites-available
 
-RUN ln -s /etc/apache2/sites-available/seed-it.eu.conf /etc/apache2/sites-enabled
+RUN ln -s /etc/apache2/sites-available/audd.conf /etc/apache2/sites-enabled
 
 
 
